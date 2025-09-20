@@ -9,7 +9,7 @@ By uncovering topics like *delivery issues*, *taste*, or *packaging problems*, b
 
 ## Dataset
 - **Source:** [Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)
-- **Size:** ~500,000 reviews
+- **Size:** ~25,000 reviews
 - **Columns used:** 
   - `reviewText` → main review content  
   - `summary` → short headline of the review (optional for insights)
@@ -17,7 +17,7 @@ By uncovering topics like *delivery issues*, *taste*, or *packaging problems*, b
 ---
 
 ## Step 1: Data Cleaning & Preprocessing
-- **Handle Missing Values:** Dropped reviews where `reviewText` is null; filled missing `summary` with empty strings.  
+- **Handle Missing Values:** Dropped reviews where `text` is null; filled missing `summary` with empty strings.  
 - **Remove Duplicates:** Ensured no duplicate reviews skew topics.  
 - **Text Normalization:** Lowercased text, removed HTML tags, punctuation, and non-alphabetic characters.  
 - **Tokenization & Lemmatization:** Converted text into meaningful tokens using **spaCy**, keeping only words longer than 2 characters.  
